@@ -42,7 +42,7 @@
       <Flammability>0.5</Flammability>
     </statBases>
     <costList>
-      <Steel>100</Steel>
+      <Steel>120</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <comps>
@@ -68,7 +68,7 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <researchPrerequisites>
-      <li>TransportPod2</li>
+      <li>TransportPodImp</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
@@ -101,8 +101,8 @@
       <Flammability>0.5</Flammability>
     </statBases>
     <costList>
-      <Steel>100</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>200</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <comps>
       <li Class="CompProperties_Refuelable">
@@ -127,7 +127,7 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <researchPrerequisites>
-      <li>TransportPod3</li>
+      <li>TransportPodAdv</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>

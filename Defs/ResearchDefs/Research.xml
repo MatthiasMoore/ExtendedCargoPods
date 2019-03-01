@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ResearchProjectDef>
-    <defName>TransportPod2</defName>
-    <label>Transport Pod Mk2</label>
+    <defName>TransportPodImp</defName>
+    <label>Improved Transport Pod</label>
     <description>Harder, Better, Faster, Stronger</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -10,22 +10,28 @@
       <li>TransportPod</li>
       <li>MultiAnalyzer</li>
     </prerequisites>
-    <requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
     <researchViewX>13</researchViewX>
     <researchViewY>0.8</researchViewY>
   </ResearchProjectDef>
   
   <ResearchProjectDef>
-    <defName>TransportPod3</defName>
-    <label>Transport Pod Mk3</label>
+    <defName>TransportPodAdv</defName>
+    <label>Advanced Transport Pod</label>
     <description>Hardest, Best, Fastest, Strongest</description>
     <baseCost>9000</baseCost>
     <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>TransportPod2</li>
+      <li>TransportPodImp</li>
       <li>AdvancedFabrication</li>
     </prerequisites>
-    <requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
     <researchViewX>14</researchViewX>
     <researchViewY>0.8</researchViewY>
   </ResearchProjectDef>
