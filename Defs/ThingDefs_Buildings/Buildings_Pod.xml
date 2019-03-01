@@ -45,7 +45,7 @@
       <li Class="CompProperties_Launchable" />
     </comps>
     <researchPrerequisites>
-      <li>TransportPod2</li>
+      <li>TransportPodImp</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
@@ -76,7 +76,7 @@
       <li Class="CompProperties_Launchable" />
     </comps>
     <researchPrerequisites>
-      <li>TransportPod3</li>
+      <li>TransportPodAdv</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
