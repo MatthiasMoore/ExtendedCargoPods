@@ -35,7 +35,7 @@
     </statBases>
     <costList>
       <Steel>120</Steel>
-      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
@@ -81,5 +81,4 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
   </ThingDef>
-  
 </Defs>

@@ -2,7 +2,7 @@
 <Defs>
   <ResearchProjectDef>
     <defName>TransportPod2</defName>
-    <label>Transport Pod Mk2</label>
+    <label>Improved Transport Pod</label>
     <description>Harder, Better, Faster, Stronger</description>
     <baseCost>3000</baseCost>
     <techLevel>Industrial</techLevel>
@@ -17,7 +17,7 @@
   
   <ResearchProjectDef>
     <defName>TransportPod3</defName>
-    <label>Transport Pod Mk3</label>
+    <label>Advanced Transport Pod</label>
     <description>Hardest, Best, Fastest, Strongest</description>
     <baseCost>9000</baseCost>
     <techLevel>Spacer</techLevel>

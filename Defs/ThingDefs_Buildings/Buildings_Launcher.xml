@@ -42,7 +42,7 @@
       <Flammability>0.5</Flammability>
     </statBases>
     <costList>
-      <Steel>100</Steel>
+      <Steel>120</Steel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <comps>
@@ -101,8 +101,8 @@
       <Flammability>0.5</Flammability>
     </statBases>
     <costList>
-      <Steel>100</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <Steel>200</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
     </costList>
     <comps>
       <li Class="CompProperties_Refuelable">

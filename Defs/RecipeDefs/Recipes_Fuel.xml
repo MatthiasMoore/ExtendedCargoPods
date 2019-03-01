@@ -30,5 +30,6 @@
     <products>
       <Rocketfuel>5</Rocketfuel>
     </products>
+    <researchPrerequisite>TransportPod3</researchPrerequisite>
   </RecipeDef>
 </Defs>
