@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>TransportPod2</defName>
+    <label>Transport Pod Mk2</label>
+    <description>Harder, Better, Faster, Stronger</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>TransportPod</li>
+      <li>MultiAnalyzer</li>
+    </prerequisites>
+    <requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+    <researchViewX>13</researchViewX>
+    <researchViewY>0.8</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>TransportPod3</defName>
+    <label>Transport Pod Mk3</label>
+    <description>Hardest, Best, Fastest, Strongest</description>
+    <baseCost>9000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>TransportPod2</li>
+      <li>AdvancedFabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>MultiAnalyzer</requiredResearchBuilding>
+    <researchViewX>14</researchViewX>
+    <researchViewY>0.8</researchViewY>
+  </ResearchProjectDef>
+</Defs>

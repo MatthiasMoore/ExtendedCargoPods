@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="ExtendedCargoLauncher" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<statBases>
+			<SellPriceFactor>0.70</SellPriceFactor>
+		</statBases>
+	</ThingDef>
+  
+  <ThingDef ParentName="ExtendedCargoLauncher">
+		<defName>PodLauncherMK2</defName>
+		<label>Pod Launcher MK2</label>
+		<description>Standard pod launcher with increased fuel capacity.</description>
+		<graphicData>
+			<texPath>PodLauncher2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<size>(1,2)</size>
+		<rotatable>true</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1.0</fillPercent>
+		<designationCategory>Misc</designationCategory>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<hasFuelingPort>true</hasFuelingPort>
+		</building>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>250.0</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_FuelingPort</li>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<researchPrerequisites>
+			<li>TransportPod2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+  
+  <ThingDef ParentName="ExtendedCargoLauncher">
+		<defName>PodLauncherMK3</defName>
+		<label>Pod Launcher MK3</label>
+		<description>Advanced pod launcher with increased fuel capacity.</description>
+		<graphicData>
+			<texPath>PodLauncher3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,3)</drawSize>
+		</graphicData>
+		<size>(1,2)</size>
+		<rotatable>true</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1.0</fillPercent>
+		<designationCategory>Misc</designationCategory>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<building>
+			<hasFuelingPort>true</hasFuelingPort>
+		</building>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>1000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>450.0</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Rocketfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_FuelingPort</li>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<researchPrerequisites>
+			<li>TransportPod3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+		<uiIconScale>0.9</uiIconScale>
+	</ThingDef>
+</Defs>
