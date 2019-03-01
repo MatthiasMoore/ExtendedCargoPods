@@ -2,8 +2,8 @@
 Tiered Transport Pods for RimWorld
 
 Adds 4 new buildings
-  * Large Transport Pod - 0Kg max capacity cargo pod
-  * Huge Transport Pod - 0Kg max capacity cargo pod
+  * Large Transport Pod - 500Kg max capacity cargo pod
+  * Huge Transport Pod - 1050Kg max capacity cargo pod
   * Improvded Pod Launcher - 250 Chemfuel capacity
   * Advanced Pod Launcher - 450 Rocket Fuel capacity
 
