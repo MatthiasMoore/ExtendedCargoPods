@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<RecipeDef>
-		<defName>Make_RocketFuel</defName>
-		<label>Refine Rocket Fuel from Chemfuel</label>
-		<description>Make a batch of rocket fuel by refining chemfuel.</description>
-		<jobString>Refining rocketfuel from chemfuel.</jobString>
+  <RecipeDef>
+    <defName>Make_RocketFuel</defName>
+    <label>Refine Rocket Fuel from Chemfuel</label>
+    <description>Make a batch of rocket fuel by refining chemfuel.</description>
+    <jobString>Refining rocketfuel from chemfuel.</jobString>
     <recipeUsers>
       <li>BiofuelRefinery</li>
     </recipeUsers>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>3000</workAmount>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>3000</workAmount>
     <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Chemfuel</li>
-					</thingDefs>
-				</filter>
-				<count>10</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Chemfuel</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<Rocketfuel>5</Rocketfuel>
-		</products>
-	</RecipeDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Rocketfuel>5</Rocketfuel>
+    </products>
+  </RecipeDef>
 </Defs>

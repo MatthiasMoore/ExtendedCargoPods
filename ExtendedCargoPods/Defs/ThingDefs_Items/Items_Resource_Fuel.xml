@@ -4,38 +4,37 @@
     <defName>Rocketfuel</defName>
     <label>RocketFuel</label>
     <description>A volatile liquid chemical. Used to fuel engines and rockets, or to transmute into propellant for projectiles, or as an incendiary weapon.</description>
-		<tickerType>Normal</tickerType>
+    <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Item/Resource/Chemfuel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>0.85</drawSize>
     </graphicData>
     <stackLimit>150</stackLimit>
-		<statBases>
+    <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <MarketValue>2.7</MarketValue>
       <Mass>0.05</Mass>
       <Flammability>4.0</Flammability>
-			<DeteriorationRate>1.0</DeteriorationRate>
-		</statBases>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<explosiveRadius>1.6</explosiveRadius>
-				<explosiveDamageType>Flame</explosiveDamageType>
-				<explosiveExpandPerStackcount>0.057</explosiveExpandPerStackcount>
-				<startWickOnDamageTaken>Flame</startWickOnDamageTaken>
-				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
-				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-				<preExplosionSpawnChance>1</preExplosionSpawnChance>
-				<wickTicks>
-					<min>70</min>
-					<max>150</max>
-				</wickTicks>
-			</li>
-		</comps>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.6</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.057</explosiveExpandPerStackcount>
+        <startWickOnDamageTaken>Flame</startWickOnDamageTaken>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>
+          <min>70</min>
+          <max>150</max>
+        </wickTicks>
+      </li>
+    </comps>
   </ThingDef>
-  
 </Defs>
