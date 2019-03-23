@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <RecipeDef>
-    <defName>Make_RocketFuel</defName>
+    <defName>ECP_Make_RocketFuel</defName>
     <label>Refine Rocket Fuel from Chemfuel</label>
     <description>Make a batch of rocket fuel by refining chemfuel.</description>
     <jobString>Refining rocketfuel from chemfuel.</jobString>
@@ -28,8 +28,8 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Rocketfuel>5</Rocketfuel>
+      <ECP_RocketFuel>5</ECP_RocketFuel>
     </products>
-    <researchPrerequisite>TransportPodAdv</researchPrerequisite>
+    <researchPrerequisite>ECP_Rsh_RocketFuel</researchPrerequisite>
   </RecipeDef>
 </Defs>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <ThingDef ParentName="ResourceBase">
-    <defName>Rocketfuel</defName>
-    <label>RocketFuel</label>
+    <defName>ECP_RocketFuel</defName>
+    <label>Rocket Fuel</label>
     <description>A volatile liquid chemical. Used to fuel engines and rockets, or to transmute into propellant for projectiles, or as an incendiary weapon.</description>
     <tickerType>Normal</tickerType>
     <graphicData>
@@ -37,4 +38,5 @@
       </li>
     </comps>
   </ThingDef>
+  
 </Defs>
