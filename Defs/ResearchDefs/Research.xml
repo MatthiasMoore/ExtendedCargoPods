@@ -28,6 +28,7 @@
     <prerequisites>
       <li>ECP_Rsh_LauncherImp</li>
       <li>MultiAnalyzer</li>
+      <li>BiofuelRefining</li>
     </prerequisites>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
     <requiredResearchFacilities>
