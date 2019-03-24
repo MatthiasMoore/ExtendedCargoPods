@@ -1,37 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef Name="ExtendedCargoPod" ParentName="BuildingBase" Abstract="True">
-    <description>A heavy duty launchable sub-orbital cargo pod. Can be used for sending gifts, people, and supplies.</description>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ECP_PodLarge</defName>
+    <label>Large Transport Pod</label>
+    <description>A heavy duty launchable sub-orbital cargo pod. Can be used for sending gifts, people, and supplies to remote locations.</description>
+    <graphicData>
+      <texPath>PodTemplateBlue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.75,1.75)</drawSize>
+    </graphicData>
     <size>(1,1)</size>
     <rotatable>false</rotatable>
     <tickerType>Normal</tickerType>
     <altitudeLayer>BuildingOnTop</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>false</castEdgeShadows>
-    <fillPercent>0.7</fillPercent>
+    <fillPercent>0.5</fillPercent>
     <designationCategory>Misc</designationCategory>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <inspectorTabs>
-      <li>ITab_TransporterContents</li>
-    </inspectorTabs>
-    <placeWorkers>
-      <li>PlaceWorker_NeedsFuelingPort</li>
-      <li>PlaceWorker_NotUnderRoof</li>
-    </placeWorkers>
-  </ThingDef>
-  
-  <ThingDef Name="TransportPodLg" ParentName="ExtendedCargoPod">
-    <defName>LargeTransportPod</defName>
-    <label>Large Transport Pod</label>
-    <graphicData>
-      <texPath>PodTemplateBlue</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.4,1.4)</drawSize>
-    </graphicData>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.1</Flammability>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
     </statBases>
     <costList>
       <Steel>120</Steel>
@@ -44,25 +35,42 @@
       </li>
       <li Class="CompProperties_Launchable" />
     </comps>
+    <inspectorTabs>
+      <li>ITab_TransporterContents</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsFuelingPort</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
     <researchPrerequisites>
-      <li>TransportPodImp</li>
+      <li>ECP_Rsh_PodImp</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    <uiIconScale>0.9</uiIconScale>
+    <uiIconScale>0.75</uiIconScale>
   </ThingDef>
   
-  <ThingDef Name="TransportPodHg" ParentName="ExtendedCargoPod">
-    <defName>HugeTransportPod</defName>
+  <ThingDef ParentName="BuildingBase">
+    <defName>ECP_PodHuge</defName>
     <label>Huge Transport Pod</label>
+    <description>A heavy duty launchable sub-orbital cargo pod. Can be used for sending gifts, people, and supplies to the other side of the planet.</description>
     <graphicData>
       <texPath>PodTemplateRed</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.4,1.4)</drawSize>
+      <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Misc</designationCategory>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.1</Flammability>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.7</Flammability>
     </statBases>
     <costList>
       <Steel>300</Steel>
@@ -75,8 +83,15 @@
       </li>
       <li Class="CompProperties_Launchable" />
     </comps>
+    <inspectorTabs>
+      <li>ITab_TransporterContents</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <li>PlaceWorker_NeedsFuelingPort</li>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
     <researchPrerequisites>
-      <li>TransportPodAdv</li>
+      <li>ECP_Rsh_PodAdv</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>

@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef Name="ExtendedCargoLauncher" Abstract="True">
-    <category>Building</category>
-    <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-    <statBases>
-      <SellPriceFactor>0.70</SellPriceFactor>
-    </statBases>
-  </ThingDef>
   
-  <ThingDef ParentName="ExtendedCargoLauncher">
-    <defName>ImprovedPodLauncher</defName>
+  <ThingDef ParentName="BuildingBase">
+    <defName>ECP_LauncherImp</defName>
     <label>Improved Pod Launcher</label>
     <description>Standard pod launcher with increased fuel capacity.</description>
     <graphicData>
       <texPath>PodLauncherImp</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,3)</drawSize>
     </graphicData>
     <size>(1,2)</size>
@@ -37,8 +23,8 @@
       <hasFuelingPort>true</hasFuelingPort>
     </building>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>4500</WorkToBuild>
       <Flammability>0.5</Flammability>
     </statBases>
     <costList>
@@ -49,7 +35,7 @@
       <li Class="CompProperties_Refuelable">
         <fuelCapacity>250.0</fuelCapacity>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-        <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+        <initialConfigurableTargetFuelLevel>125</initialConfigurableTargetFuelLevel>
         <fuelFilter>
           <thingDefs>
             <li>Chemfuel</li>
@@ -59,7 +45,7 @@
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
-        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+        <drawFuelGaugeInMap>true</drawFuelGaugeInMap>
       </li>
     </comps>
     <placeWorkers>
@@ -68,19 +54,19 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <researchPrerequisites>
-      <li>TransportPodImp</li>
+      <li>ECP_Rsh_LauncherImp</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
   </ThingDef>
   
-  <ThingDef ParentName="ExtendedCargoLauncher">
-    <defName>AdvancedPodLauncher</defName>
+  <ThingDef ParentName="BuildingBase">
+    <defName>ECP_LauncherAdv</defName>
     <label>Advanced Pod Launcher</label>
     <description>Advanced pod launcher with increased refined fuel capacity.</description>
     <graphicData>
       <texPath>PodLauncherAdv</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,3)</drawSize>
     </graphicData>
     <size>(1,2)</size>
@@ -96,9 +82,9 @@
       <hasFuelingPort>true</hasFuelingPort>
     </building>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
-      <Flammability>0.5</Flammability>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0.7</Flammability>
     </statBases>
     <costList>
       <Steel>200</Steel>
@@ -108,17 +94,17 @@
       <li Class="CompProperties_Refuelable">
         <fuelCapacity>450.0</fuelCapacity>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-        <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+        <initialConfigurableTargetFuelLevel>225</initialConfigurableTargetFuelLevel>
         <fuelFilter>
           <thingDefs>
-            <li>Rocketfuel</li>
+            <li>ECP_RocketFuel</li>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
-        <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+        <drawFuelGaugeInMap>true</drawFuelGaugeInMap>
       </li>
     </comps>
     <placeWorkers>
@@ -127,7 +113,7 @@
     </placeWorkers>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <researchPrerequisites>
-      <li>TransportPodAdv</li>
+      <li>ECP_Rsh_LauncherAdv</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
