@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
   <RecipeDef>
     <defName>ECP_Make_RocketFuel</defName>
     <label>Refine Rocket Fuel from Chemfuel</label>
@@ -32,104 +33,5 @@
     </products>
     <researchPrerequisite>ECP_Rsh_RocketFuel</researchPrerequisite>
   </RecipeDef>
-  
-  <RecipeDef>
-    <defName>ECP_Conv1_RocketFuel</defName>
-    <label>Convert 1 Rocket Fuel</label>
-    <description>Convert 1 Rocket Fuel.</description>
-    <jobString>Convert 1 Rocket Fuel.</jobString>
-    <recipeUsers>
-      <li>BiofuelRefinery</li>
-    </recipeUsers>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <workAmount>1</workAmount>
-    <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Rocketfuel</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Rocketfuel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <ECP_RocketFuel>1</ECP_RocketFuel>
-    </products>
-    <researchPrerequisite>BiofuelRefining</researchPrerequisite>
-  </RecipeDef>
-  
-    <RecipeDef>
-    <defName>ECP_Conv10_RocketFuel</defName>
-    <label>Convert 10 Rocket Fuel</label>
-    <description>Convert 10 Rocket Fuel.</description>
-    <jobString>Convert 10 Rocket Fuel.</jobString>
-    <recipeUsers>
-      <li>BiofuelRefinery</li>
-    </recipeUsers>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <workAmount>1</workAmount>
-    <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Rocketfuel</li>
-          </thingDefs>
-        </filter>
-        <count>10</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Rocketfuel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <ECP_RocketFuel>10</ECP_RocketFuel>
-    </products>
-    <researchPrerequisite>BiofuelRefining</researchPrerequisite>
-  </RecipeDef>
-  
-    <RecipeDef>
-    <defName>ECP_Conv100_RocketFuel</defName>
-    <label>Convert 100 Rocket Fuel</label>
-    <description>Convert 100 Rocket Fuel.</description>
-    <jobString>Convert 100 Rocket Fuel.</jobString>
-    <recipeUsers>
-      <li>BiofuelRefinery</li>
-    </recipeUsers>
-    <effectWorking>Cremate</effectWorking>
-    <soundWorking>Recipe_Cremate</soundWorking>
-    <workAmount>1</workAmount>
-    <workSpeedStat>UnskilledLaborSpeed</workSpeedStat>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Rocketfuel</li>
-          </thingDefs>
-        </filter>
-        <count>100</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Rocketfuel</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <ECP_RocketFuel>100</ECP_RocketFuel>
-    </products>
-    <researchPrerequisite>BiofuelRefining</researchPrerequisite>
-  </RecipeDef>
-  
+
 </Defs>
