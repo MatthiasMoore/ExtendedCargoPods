@@ -3,7 +3,9 @@
   <name>Extended Cargo Pods</name>
   <supportedVersions>
     <li>1.0</li>
+    <li>1.1</li>
   </supportedVersions>
+  <packageId>MattDaJoo.ExtendedCargoPods</packageId>
   <author>MattDaJoo</author>
-  <description>Extended Cargo Pods v1.4</description>
+  <description>Extended Cargo Pods v1.5, now with 1.0 and 1.1 support.</description>
 </ModMetaData>

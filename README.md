@@ -18,8 +18,3 @@ Adds 6 new researches
   * Advanced Launchers
   * Advanced Pods
   * Rocket Turbine
-  
-TODO:
-  * Tweak textures to better fit the game
-  * Balance cost of all buildings as needed 
-  * Rocket themed explosives and weaponry

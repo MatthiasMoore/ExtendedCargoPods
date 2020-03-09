@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>ECP_Make_RocketFuel</defName>
+    <label>Refine Rocket Fuel from Chemfuel</label>
+    <description>Make a batch of rocket fuel by refining chemfuel.</description>
+    <jobString>Refining Rocket Fuel from Chemfuel.</jobString>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>3000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ECP_RocketFuel>5</ECP_RocketFuel>
+    </products>
+    <researchPrerequisite>ECP_Rsh_RocketFuel</researchPrerequisite>
+  </RecipeDef>
+
+</Defs>
