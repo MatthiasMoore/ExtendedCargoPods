@@ -1,3 +1,6 @@
+#Archived Repo
+Due to life steering me in other directions, I no longer have the time to dive deeper into the mod as I originally intended leading to the long period of inactivity.  Anyone is free to take the modifications I have made and run in whicever direction they choose.
+
 # Extended Cargo Pods
 Tiered Transport Pods for RimWorld
 
